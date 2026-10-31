@@ -3,10 +3,8 @@ package creational.singleton;
 public class ProgrammLogger {
     private String logFile = "This is log file. \n";
 
-    // Tashqi sinfdan obyekt yaratib bo'lmasligi uchun private konstruktor
     private ProgrammLogger() {}
 
-    // Bill Pugh Singleton usuli (Static Inner Class Holder)
     private static class Holder {
         private static final ProgrammLogger INSTANCE = new ProgrammLogger();
     }
